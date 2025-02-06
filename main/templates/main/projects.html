@@ -1,25 +1,64 @@
 {% extends 'main/base.html' %}
+{% load static %}
 
 {% block title %}Projets - Portfolio{% endblock %}
 
 {% block content %}
-<h1>Mes Projets</h1>
-<div class="row">
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Projet 1</h5>
-                <p class="card-text">Description du projet 1.</p>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Mes Projets</h1>
+
+    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static 'main/images/imgs.jpeg' %}" class="card-img-top" alt="Projet 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Projet 1</h5>
+                                <p class="card-text">Un projet innovant dans le domaine du développement web.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static 'main/images/imgs.jpeg' %}" class="card-img-top" alt="Projet 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Projet 2</h5>
+                                <p class="card-text">Un concept basé sur l'architecture et le minimalisme.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="{% static 'main/images/imgs.jpeg' %}" class="card-img-top" alt="Projet 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Projet 3</h5>
+                                <p class="card-text">Une application mobile intuitive et moderne.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Projet 2</h5>
-                <p class="card-text">Description du projet 2.</p>
-            </div>
-        </div>
+
+        <!-- Contrôles du carrousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
 </div>
 {% endblock %}
