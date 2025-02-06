@@ -1,32 +1,11 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio - Accueil</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{% static 'main/styles.css' %}" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="/">Mon Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projets</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+{% extends 'main/base.html' %}
 
-    <div class="container text-center mt-5">
-        <h1>Bienvenue dans mon univers</h1>
-        <p class="lead">Développeur passionné, je suis disponible pour des missions de développement applicatif, web & mobile.</p>
-        <a href="{% url 'projects' %}" class="btn btn-warning mt-3">Voir mes projets</a>
-    </div>
-</body>
-</html>
+{% block title %}Accueil - Portfolio{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <p>Je suis un développeur passionné par la programmation et le design web.</p>
+    <a href="{% url 'projects' %}" class="btn btn-primary mt-3">Voir mes projets</a>
+</div>
+{% endblock %}
