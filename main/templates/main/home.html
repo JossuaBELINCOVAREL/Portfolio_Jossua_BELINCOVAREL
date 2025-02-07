@@ -11,6 +11,28 @@
         <a href="{% url 'projects' %}" class="btn-custom">Voir mes projets</a>
     </div>
 </header>
+
+<!-- Section À Propos -->
+<section class="about-me py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image -->
+            <div class="col-md-5 text-center">
+                <img src="{% static 'C:\Users\jossu\Documents\perso\dev\portfolio\main\static\main\images\imgs.jpeg' %}" alt="Photo de moi" class="about-img">
+            </div>
+            <!-- Texte -->
+            <div class="col-md-7">
+                <h2 class="about-title">À propos de moi</h2>
+                <p class="about-text">
+                    Passionné par le développement web et les technologies modernes, 
+                    je crée des solutions performantes et élégantes. Spécialisé en <strong>Python, Django et SQL</strong>, 
+                    j’aime concevoir des applications web efficaces et intuitives.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Section Stack Technologies -->
 <section class="tech-stacks py-5">
     <div class="container">
@@ -31,4 +53,5 @@
         </div>
     </div>
 </section>
+
 {% endblock %}
