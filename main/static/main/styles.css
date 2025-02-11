@@ -218,7 +218,7 @@ body {
 }
 
 .custom-title {
-    font-size: 2.5rem; /* Même taille que le titre Contactez-moi */
+    font-size: 3rem; /* Même taille que le titre Contactez-moi */
     font-family: "Jersey 15", serif; /* Même police */
     font-weight: 300; /* Même épaisseur de police */
     color: #ffcc00; /* Même couleur */
@@ -256,7 +256,7 @@ body {
     border-radius: 20px;
     padding: 50px 0;
     padding-bottom: 1rem !important; /* Réduction de l’espace sous la section */
-    padding-top: 1rem !important;
+    padding-top: 1.5rem !important;
     max-width: 900px; /* Réduction de la largeur */
     margin: 0 auto; /* Centre la section */
     text-align: center; /* Pour une meilleure harmonie */
@@ -311,7 +311,7 @@ body {
 
 .tech-card img {
     width: 100%;
-    max-width: 90px; /* Limite la taille des logos */
+    max-width: 95px; /* Limite la taille des logos */
     height: auto;
     object-fit: contain; /* Garder le ratio sans déformation */
 }
