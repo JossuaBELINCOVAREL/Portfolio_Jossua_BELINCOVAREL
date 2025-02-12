@@ -249,7 +249,7 @@ body {
 /* Réduction de la taille des boutons du carrousel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: black; /* Rend les boutons visibles */
+    background-color: #ffcc0090; /* Rend les boutons visibles */
     border-radius: 30%;
     padding: 15px;
 }
