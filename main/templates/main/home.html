@@ -6,7 +6,7 @@
 {% block content %}
 <header class="hero">
     <div class="hero-content">
-        <h1>Hello, je suis <span class="highlight">Jossua</span></h1>
+        <h1><span id="dynamic-word">Bonjour</span></h1>
         <p>Développeur passionné, spécialisé en Python et Django.</p>
         <a href="{% url 'projects' %}" class="btn-custom">Voir mes projets</a>
     </div>
@@ -93,5 +93,8 @@
         </div>
     </div>
 </section>
+
+<script src="{% static 'js/script.js' %}"></script>
+
 
 {% endblock %}
