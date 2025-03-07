@@ -263,6 +263,16 @@ body {
     border: 2px solid #ffcc00;
 }
 
+.card img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer; /* Curseur de la main */
+}
+
+.card a:hover img {
+    transform: scale(0.95); /* Légère augmentation */
+    opacity: 0.9; /* Effet de transparence */
+}
+
 /* ✅ Section À Propos (version centrée et réduite) */
 .about-me {
     background-color: #121212;
