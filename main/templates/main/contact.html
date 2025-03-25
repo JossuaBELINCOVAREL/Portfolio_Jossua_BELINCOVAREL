@@ -6,8 +6,8 @@
 <div class="contact-container">
     <h1 class="custom-title text-center mb-4">Contactez-moi</h1>
     <div class="contact-card">
-        <form method="post">
-            {% csrf_token %}
+        <form method="POST" action="https://formspree.io/f/xvgkqzzv">
+            <input type="hidden" name="_replyto" value="jossuabelincovarel@outlook.com">
             <div class="mb-3">
                 <label for="name" class="form-label"><i class="fas fa-user"></i> Nom</label>
                 <input type="text" class="form-control" id="name" name="name" required>
